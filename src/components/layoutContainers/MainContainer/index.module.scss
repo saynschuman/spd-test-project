@@ -1,0 +1,44 @@
+.mainContainer {
+  width: calc(100% - 219px);
+  background: #fff;
+  height: auto;
+  padding: 38px 62px;
+}
+
+.addingBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.pageFooter {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    display: flex;
+  }
+  .right {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pageFooter {
+    .left {
+      display: block;
+    }
+    .right {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .mainContainer {
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  .pageFooter {
+    display: block;
+  }
+}

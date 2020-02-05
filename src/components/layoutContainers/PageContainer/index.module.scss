@@ -1,0 +1,16 @@
+.pageWrapper {
+  padding: 25px;
+}
+
+.pageInner {
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 769px) {
+  .pageInner {
+    display: block;
+  }
+}

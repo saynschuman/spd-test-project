@@ -1,0 +1,16 @@
+.button {
+  color: #53687e;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #53687e;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-right: 12px;
+  &:focus {
+    outline: none
+  }
+}

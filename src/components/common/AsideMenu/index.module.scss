@@ -1,0 +1,65 @@
+.asideMenu {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: block;
+      list-style-type: none;
+      padding: 0 23px;
+      margin: 0;
+      border-bottom: 1px solid #d8dde3;
+      ul {
+        padding: 0;
+        li {
+          padding: 0;
+          margin: 0;
+          border-bottom: none;
+          a {
+            text-transform: none;
+            color: #53687e;
+            line-height: 32px;
+            &.checked {
+              color: #334152;
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                right: -32px;
+                height: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 14px;
+                background-image: url("./img/checked.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+              }
+            }
+            &.active {
+              color: #334152;
+              font-weight: 600;
+              position: relative;
+              &::after {
+                content: '';
+                position: absolute;
+                left: -23px;
+                height: 100%;
+                top: 0;
+                width: 2px;
+                background-color: #2888d1;
+              }
+            }
+            &.light {
+              color: #8c96a3;
+            }
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 48px;
+      }
+    }
+  }
+}

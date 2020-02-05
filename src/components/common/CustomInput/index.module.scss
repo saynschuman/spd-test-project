@@ -1,0 +1,41 @@
+.customInput {
+  input {
+    width: 191px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 2px;
+    border: 1px solid #d8dde3;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 0.4px;
+    color: #334152;
+    &.filled {
+      background-color: #f7f8fa;
+    }
+    &:focus {
+      outline: none
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .customInput {
+    width: calc(100% - 130px);
+    input {
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .customInput {
+    width: 100%;
+    input {
+      width: calc(100% - 16px);
+    }
+  }
+}

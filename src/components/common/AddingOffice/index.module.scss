@@ -1,0 +1,141 @@
+.office {
+  padding: 15px 24px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d7dce2;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.addressBlock,
+.infoItem {
+  display: flex;
+}
+
+.addressTitle {
+  color: #53687e;
+  margin-right: 17px;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.4px;
+  color: #334152;
+}
+
+.primary {
+  font-weight: bold;
+  padding-left: 15px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background-image: url("./img/checked.png");
+    height: 12px;
+    width: 12px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.infoTitle {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.4px;
+  width: 60px;
+  text-align: right;
+  padding-right: 17px;
+}
+
+.infoContent {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.4px;
+  color: #334152;
+}
+
+.navBlock {
+  display: flex;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.4px;
+  text-align: right;
+  display: block;
+  margin-right: 17px;
+  color: #53687e;
+  padding-top: 10px;
+  width: 113px;
+  cursor: pointer;
+}
+
+.labelOffice {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.4px;
+  text-align: right;
+  display: block;
+  margin-right: 17px;
+  color: #53687e;
+  padding-top: 0;
+  width: 113px;
+  cursor: pointer;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 1150px) {
+  .office {
+    display: block;
+  }
+  .infoTitle {
+    text-align: left;
+  }
+  .addressBlock,
+  .infoBlock {
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .addressBlock,
+  .infoItem {
+    display: block;
+  }
+  .addressTitle {
+    margin-bottom: 5px;
+  }
+  .infoItem {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .field {
+    display: block;
+  }
+  .label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

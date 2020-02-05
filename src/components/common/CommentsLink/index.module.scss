@@ -1,0 +1,29 @@
+.link {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #334152;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 8px;
+  margin-left: 71px;
+  cursor: pointer;
+  &::before {
+    content: '';
+    height: 18px;
+    width: 18px;
+    background-image: url("./img/plus.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .link {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}

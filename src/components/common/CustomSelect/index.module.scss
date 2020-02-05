@@ -1,0 +1,89 @@
+.customSelect {
+  position: relative;
+  z-index: 9;
+  &::after {
+    content: '';
+    width: 15px;
+    height: 13px;
+    background-image: url("./img/toggle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 10px;
+    top: 15px;
+    display: block;
+    position: absolute;
+  }
+  input {
+    width: 191px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 2px;
+    border: 1px solid #d8dde3;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 0.4px;
+    color: #8a94a0;
+    cursor: pointer;
+    &.filled {
+      background-color: #f7f8fa;
+    }
+  }
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+  height: auto;
+  max-height: 234px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1150px) {
+  .customSelect {
+    width: calc(100% - 130px);
+    input {
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .customSelect {
+    width: 100%;
+    input {
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+.disabled {
+  width: calc(100% - 16px);
+  padding: 15px 8px;
+  border-radius: 2px;
+  border: 1px solid #d8dde3;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.4px;
+  color: #334152;
+  cursor: pointer;
+  &:hover {
+    background-color: #2888d1;
+    color: #fff;
+  }
+  &.filled {
+    background-color: #f7f8fa;
+  }
+  &:focus {
+    outline: none
+  }
+}

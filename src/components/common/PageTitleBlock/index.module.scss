@@ -1,0 +1,21 @@
+.titleWrapper {
+  border-bottom: 2px dotted #b7bdc5;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  .title {
+    text-transform: uppercase;
+    color: #53687e;
+    line-height: 48px;
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  .info {
+    color: #b7bdc4;
+  }
+  .subTitle {
+    color: #334152;
+    line-height: 1.71;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+  }
+}

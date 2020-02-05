@@ -1,0 +1,52 @@
+.container {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-left: 24px;
+  margin-top: -4px;
+}
+
+.input {
+  display: none;
+}
+
+
+.mark {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #C4CCCF;
+  margin-right: 10px;
+  .input:checked + &::after {
+    opacity: 1;
+    border: 1px solid #2888d1;
+  }
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 0;
+    background-color: #2888d1;
+    background-image: url("./img/check.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 15px;
+  color: #334152;
+}

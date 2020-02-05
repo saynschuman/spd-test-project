@@ -1,0 +1,13 @@
+.header {
+  background-color: #175786;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  .logo {
+    height: 103px;
+    width: 103px;
+    display: block;
+    margin: 0 auto;
+    background: url("./img/aside-header.svg") no-repeat;
+    background-size: 100%;
+  }
+}
